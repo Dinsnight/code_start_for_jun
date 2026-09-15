@@ -27,6 +27,7 @@ Hello, JavaScript!
 
 Затем выведи своё имя и возраст.
 `,
+videoUrl: "https://youtu.be/fHl7UyRjOf0?si=CMZVga_EoBliKUnK"
   },
 
   {

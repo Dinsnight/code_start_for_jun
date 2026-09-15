@@ -1,12 +1,15 @@
 import { Link, useParams } from "react-router-dom";
+
 import { courses } from "../entities/course/model/courses";
 import { Container } from "../shared/ui/Container";
+
 import { javascriptLessons } from "../entities/lesson/model/javascriptLessons";
 import { htmlLessons } from "../entities/lesson/model/htmlLessons";
 import { cssLessons } from "../entities/lesson/model/cssLessons";
 import { bootstrapLessons } from "../entities/lesson/model/bootstrapLessons";
 import { gitLessons } from "../entities/lesson/model/gitLessons";
 import { reactLessons } from "../entities/lesson/model/reactLessons";
+import { pythonLessons } from "../entities/lesson/model/pythonLessons";
 
 export function CoursePage() {
   const { id } = useParams();
@@ -21,7 +24,7 @@ export function CoursePage() {
     );
   }
 
-  const lessons =
+ const lessons =
   course.id === 'javascript'
     ? javascriptLessons
     : course.id === 'html'
@@ -34,7 +37,10 @@ export function CoursePage() {
             ? gitLessons
             : course.id === 'react'
               ? reactLessons
-              : []
+              : course.id === 'python'
+                ? pythonLessons
+                : []
+
   return (
     <main className="page">
       <Container>
@@ -72,7 +78,6 @@ export function CoursePage() {
 
               <div>
                 <strong>{lesson.title}</strong>
-
                 <p>{lesson.description}</p>
               </div>
             </Link>

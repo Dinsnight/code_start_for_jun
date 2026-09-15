@@ -17,4 +17,5 @@ export interface Lesson {
   description: string
   content: string
   task: string
+  videoUrl?: string
 }

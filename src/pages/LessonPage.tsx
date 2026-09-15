@@ -7,26 +7,29 @@ import { cssLessons } from "../entities/lesson/model/cssLessons";
 import { bootstrapLessons } from "../entities/lesson/model/bootstrapLessons";
 import { gitLessons } from "../entities/lesson/model/gitLessons";
 import { reactLessons } from "../entities/lesson/model/reactLessons";
+import { pythonLessons } from "../entities/lesson/model/pythonLessons";
 
 export function LessonPage() {
   const { courseId, lessonId } = useParams();
 
   const course = courses.find((item) => item.id === courseId);
 
- const lessons =
-  courseId === 'javascript'
-    ? javascriptLessons
-    : courseId === 'html'
-      ? htmlLessons
-      : courseId === 'css'
-        ? cssLessons
-        : courseId === 'bootstrap'
-          ? bootstrapLessons
-          : courseId === 'git'
-            ? gitLessons
-            : courseId === 'react'
-              ? reactLessons
-              : []
+  const lessons =
+    courseId === "javascript"
+      ? javascriptLessons
+      : courseId === "html"
+        ? htmlLessons
+        : courseId === "css"
+          ? cssLessons
+          : courseId === "bootstrap"
+            ? bootstrapLessons
+            : courseId === "git"
+              ? gitLessons
+              : courseId === "react"
+                ? reactLessons
+                : courseId === "python"
+                  ? pythonLessons
+                  : [];
   const lesson = lessons.find((item) => item.id === lessonId);
 
   if (!course || !lesson) {
@@ -58,6 +61,11 @@ export function LessonPage() {
               <p key={index}>{line || "\u00A0"}</p>
             ))}
           </div>
+          {lesson.videoUrl ? (
+            <Link to={lesson.videoUrl}>Get</Link>
+          ) : (
+            <p>No video sorry</p>
+          )}
 
           <div className="task-box">
             <div className="task-label">PRACTICE</div>
@@ -67,7 +75,9 @@ export function LessonPage() {
             <pre>{lesson.task}</pre>
           </div>
 
-          <button className="complete-button">✓ Завершить урок</button>
+          <Link to={`/courses/${course.id}`}>
+            <button className="complete-button">✓ Завершить урок</button>
+          </Link>
         </article>
       </Container>
     </main>
