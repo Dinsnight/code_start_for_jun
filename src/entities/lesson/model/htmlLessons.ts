@@ -44,7 +44,7 @@ HTML — это язык разметки веб-страниц.
     id: 'html-2',
     courseId: 'html',
     order: 2,
-    title: 'Структура HTML-документа',
+    title: 'Структура HTML-документа ZARINA',
     description: 'DOCTYPE, html, head и body',
     content: `
 # Структура HTML
