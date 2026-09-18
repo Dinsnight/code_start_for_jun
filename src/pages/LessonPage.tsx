@@ -8,7 +8,7 @@ import { bootstrapLessons } from "../entities/lesson/model/bootstrapLessons";
 import { gitLessons } from "../entities/lesson/model/gitLessons";
 import { reactLessons } from "../entities/lesson/model/reactLessons";
 import { pythonLessons } from "../entities/lesson/model/pythonLessons";
-
+import "../shared/style/lesson.css"
 export function LessonPage() {
   const { courseId, lessonId } = useParams();
 
@@ -62,9 +62,18 @@ export function LessonPage() {
             ))}
           </div>
           {lesson.videoUrl ? (
-            <Link to={lesson.videoUrl}>Get</Link>
+            <a
+              href={lesson.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lesson-video"
+            >
+              ▶ Смотреть видео урока
+            </a>
           ) : (
-            <p>No video sorry</p>
+            <div className="lesson-video">
+              🎬 Видео для этого урока пока нет
+            </div>
           )}
 
           <div className="task-box">

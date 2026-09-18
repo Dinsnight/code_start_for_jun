@@ -1,0 +1,172 @@
+.page {
+  min-height: 100vh;
+  padding: 48px 0 80px;
+  background: radial-gradient(circle at top left, #1a1f3a 0%, #0d0f1a 60%);
+  color: #e6e8f0;
+}
+
+.page a {
+  color: #8b9cff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.page a:hover {
+  color: #b3c0ff;
+  transform: translateX(-2px);
+}
+
+.lesson-content {
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px 48px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.hero-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #8b9cff;
+  background: rgba(139, 156, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.lesson-content h1 {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  line-height: 1.25;
+  background: linear-gradient(90deg, #ffffff, #a9b4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lesson-content > p {
+  font-size: 17px;
+  color: #aab0c8;
+  margin-bottom: 32px;
+  max-width: 700px;
+}
+
+.lesson-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d6d9ea;
+  margin-bottom: 32px;
+}
+
+.lesson-text p {
+  margin: 0 0 14px;
+}
+
+.lesson-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 36px;
+  cursor: pointer;
+}
+
+a.lesson-video {
+  background: linear-gradient(135deg, #6c5ce7, #8b9cff);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(108, 92, 231, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.lesson-video:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(108, 92, 231, 0.45);
+}
+
+div.lesson-video {
+  background: rgba(255, 255, 255, 0.05);
+  color: #8890a8;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+.task-box {
+  background: rgba(139, 156, 255, 0.06);
+  border: 1px solid rgba(139, 156, 255, 0.2);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.task-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #6c5ce7;
+  background: #fff;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.task-box h2 {
+  font-size: 20px;
+  margin: 0 0 16px;
+  color: #fff;
+}
+
+.task-box pre {
+  background: #0d0f1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #c9cde0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: "Fira Code", "JetBrains Mono", monospace;
+}
+
+.complete-button {
+  border: none;
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #00c896, #00a878);
+  box-shadow: 0 8px 24px rgba(0, 200, 150, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.complete-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 200, 150, 0.4);
+}
+
+@media (max-width: 640px) {
+  .lesson-content {
+    padding: 28px 20px;
+  }
+
+  .lesson-content h1 {
+    font-size: 26px;
+  }
+}

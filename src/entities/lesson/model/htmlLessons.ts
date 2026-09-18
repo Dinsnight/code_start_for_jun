@@ -5,7 +5,7 @@ export const htmlLessons: Lesson[] = [
     id: 'html-1',
     courseId: 'html',
     order: 1,
-    title: 'Введение в HTML',
+    title: 'Введение в HTML Ziyoda and Aziza',
     description: 'Что такое HTML и как устроена веб-страница',
     content: `
 # Введение в HTML
