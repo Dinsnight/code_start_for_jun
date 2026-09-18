@@ -13,10 +13,10 @@ export function Header() {
         <nav className="nav">
           <Link to="/">Главная</Link>
           <Link to="/courses">Курсы</Link>
-          <Link to="/profile">
+          {/*<Link to="/profile">
             <IconUser size={18} />
             Профиль
-          </Link>
+          </Link>*/}
         </nav>
       </div>
     </header>
