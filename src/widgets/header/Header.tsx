@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { IconCode, IconUser } from '@tabler/icons-react'
+import { IconCode } from '@tabler/icons-react'
 
 export function Header() {
   return (

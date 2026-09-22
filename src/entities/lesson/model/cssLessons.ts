@@ -5,7 +5,7 @@ export const cssLessons: Lesson[] = [
     id: 'css-1',
     courseId: 'css',
     order: 1,
-    title: 'Введение в CSS',
+    title: 'Введение в CSS Abdulaziz',
     description: 'Что такое CSS и зачем он нужен',
     content: `
 # Введение в CSS
