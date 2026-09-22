@@ -1,0 +1,94 @@
+.teacher-section {
+  padding: 80px 0;
+}
+
+.teacher-content {
+  padding: 50px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+  text-align: center;
+}
+
+.teacher-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #60a5fa;
+}
+
+.teacher-content h2 {
+  margin: 0 0 15px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.teacher-content p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: #d1d5db;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.teacher-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.teacher-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.teacher-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.teacher-button-secondary {
+  background: white;
+  color: #111827;
+}
+
+.teacher-button-secondary:hover {
+  background: #f3f4f6;
+}
+
+@media (max-width: 600px) {
+  .teacher-section {
+    padding: 50px 0;
+  }
+
+  .teacher-content {
+    padding: 35px 20px;
+  }
+
+  .teacher-content h2 {
+    font-size: 28px;
+  }
+
+  .teacher-content p {
+    font-size: 15px;
+  }
+
+  .teacher-actions {
+    flex-direction: column;
+  }
+
+  .teacher-button {
+    width: 100%;
+  }
+}

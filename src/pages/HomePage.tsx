@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { CourseList } from '../widgets/course-list/CourseList'
 import { Container } from '../shared/ui/Container'
+import "../shared/style/contact.css"
 
 export function HomePage() {
   return (
@@ -36,6 +37,40 @@ export function HomePage() {
           </div>
 
           <CourseList />
+        </Container>
+      </section>
+
+      <section className="teacher-section">
+        <Container>
+          <div className="teacher-content">
+            <span className="teacher-label">ИНДИВИДУАЛЬНОЕ ОБУЧЕНИЕ</span>
+
+            <h2>Хотите учиться с преподавателем?</h2>
+
+            <p>
+              Если вам нужна помощь преподавателя, индивидуальные занятия
+              или подробное объяснение материала — напишите нам в Telegram
+              или позвоните по телефону.
+            </p>
+
+            <div className="teacher-actions">
+              <a
+                href="https://t.me/Badriddindev1dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="teacher-button"
+              >
+                Написать в Telegram
+              </a>
+
+              <a
+                href="tel:+998887818810"
+                className="teacher-button teacher-button-secondary"
+              >
+                Позвонить
+              </a>
+            </div>
+          </div>
         </Container>
       </section>
     </>
